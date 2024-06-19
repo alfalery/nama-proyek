@@ -25,4 +25,37 @@ Instruksi untuk menginstal dan mengatur proyek Laravel.
 
    ```sh
    git clone https://github.com/username/repo.git
-   cd repo
+
+Instal dependensi Composer:
+
+sh
+Copy code
+composer install
+Instal dependensi npm:
+
+sh
+Copy code
+npm install
+Buat file .env dari contoh:
+
+sh
+Copy code
+cp .env.example .env
+Generate application key:
+
+sh
+Copy code
+php artisan key:generate
+Konfigurasi koneksi database di .env.
+
+Migrasi database:
+
+sh
+Copy code
+php artisan migrate
+Jalankan server pengembangan:
+
+sh
+Copy code
+php artisan serve
+Proyek Laravel Anda sekarang seharusnya berjalan di http://localhost:8000.
